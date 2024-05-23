@@ -40,24 +40,11 @@ const signUpButton = document.getElementById("signUp");
 const signInButton = document.getElementById("signIn");
 const container = document.getElementById("container");
 
-signUpButton.addEventListener("click", () =>
-  container.classList.add("right-panel-active")
-);
 
-signInButton.addEventListener("click", () =>
-  container.classList.remove("right-panel-active")
-);
-
-
-
-
-
-let Navbar = document.querySelector(".navbar");
+let Navbar = document.querySelector(".nav-links");
 let Fabars = document.querySelector(".fa-bars");
 
-Fabars.onclick = () => {
-  Navbar.classList.toggle("active");
-};
+
 
 var swiper = new Swiper(".home-slid", {
   navigation: {
